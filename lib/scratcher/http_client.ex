@@ -5,7 +5,8 @@ defmodule Scratcher.HttpClient do
   It respects the design of the ex_aws HTTP client module.
   [ExAws.Request.HttpClient](https://github.com/ex-aws/ex_aws/blob/master/lib/ex_aws/request/http_client.ex)
 
-
+  If you want to use a generic HTTP client in your module, 
+  you can use this module to avoid having to prepare a Behavior for your module.
   """
 
   @type http_method :: :get | :post | :put | :delete
