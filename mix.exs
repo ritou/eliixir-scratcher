@@ -12,7 +12,7 @@ defmodule Scratcher.MixProject do
       package: [
         maintainers: ["Ryo Ito"],
         licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/ritou/eliixir-scratcher"}
+        links: %{"GitHub" => "https://github.com/ritou/elixir-scratcher"}
       ],
       deps: deps()
     ]
