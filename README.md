@@ -12,7 +12,7 @@ You can call various HTTP Clients within your module by following the steps belo
 2. Specify the module in Config.
 3. The module that wants to send HTTP request can use the HTTP Client module obtained from Config.
 
-```
+```elixir
   defmodule Your.HttpClient do
     @behaviour Scratcher.HttpClient
     def request(method, url, body, headers, http_opts) do
@@ -24,11 +24,11 @@ You can call various HTTP Clients within your module by following the steps belo
   end
 ```
 
-```
+```elixir
 config :your_module, http_client: Your.HttpClient
 ```
 
-```
+```elixir
   defmodule YourModule do
     @http_client Application.fetch_env!(:your_module) |> Keyword.fetch!(:http_client)
 
