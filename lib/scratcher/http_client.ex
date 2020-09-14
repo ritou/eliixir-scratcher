@@ -9,6 +9,8 @@ defmodule Scratcher.HttpClient do
   you can use this module to avoid having to prepare a Behavior for your module.
   """
 
+  require Logger
+
   @type http_method :: :get | :post | :put | :delete
   @callback request(
               method :: http_method,
@@ -19,4 +21,12 @@ defmodule Scratcher.HttpClient do
             ) ::
               {:ok, %{status_code: pos_integer, body: binary, headers: list}}
               | {:error, %{reason: any}}
+
+  def request(_method, _url, _req_body, _headers, _http_opts) do
+    Logger.error(
+      "HTTP Client is REQUIRED. Please use another HTTP client that implements this module as Behavior."
+    )
+
+    {:error, %{reason: nil}}
+  end
 end
