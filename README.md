@@ -46,7 +46,7 @@ by adding `scratcher` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:scratcher, "~> 0.1.0"}
+    {:scratcher, "~> 0.1"}
   ]
 end
 ```
