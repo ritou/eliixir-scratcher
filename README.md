@@ -1,10 +1,10 @@
 # Scratcher
 
 Scratcher is a library for calling various HTTP Clients equivalently.
+[The behavior of a simple HTTP Client in Elixir](https://medium.com/@ritou/the-behavior-of-a-simple-http-client-in-elixir-ff156f619920)
 
 It respects the design of the ex_aws HTTP client module.
 [ExAws.Request.HttpClient](https://github.com/ex-aws/ex_aws/blob/master/lib/ex_aws/request/http_client.ex)
-
 
 You can call various HTTP Clients within your module by following the steps below.
 
